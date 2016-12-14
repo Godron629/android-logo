@@ -7,12 +7,13 @@ div div {
 	position: relative;
 }
 
-.head, .l_arm, .r_arm {
-	-webkit-transition: transform .1s ease-in-out;
+h1, p {
+	font-family: 'Molle', cursive;
+	text-align: center;
 }
 
-.l_ant {
-	-webkit-transition: transform .5s ease-in-out;
+p {
+	font-family: monospace;
 }
 
 .android {
@@ -24,18 +25,28 @@ div div {
 	width: 220px; 
 	height: 100px;
 	top: 32px;
-	border-radius: 110px 110px 0 0;
 	margin: 0 auto;
+	border-radius: 110px 110px 0 0;
+	-webkit-transition: transform .1s ease-in-out;
+}
+
+.head:hover {
+	transform: rotate(-5deg) translate(0px, -8px);
 }
 
 .l_ant {
 	width: 6px; 
 	height: 50px;
-	border-radius: 3px;
 	top: -32px;
 	left: 45px;
+	border-radius: 3px;
 	position: absolute;
 	transform: rotate(-30deg);
+	-webkit-transition: transform .5s ease-in-out;
+}
+
+.l_ant:hover {
+	transform: rotate(360deg);
 }
 
 .r_ant {
@@ -54,8 +65,8 @@ div div {
 	background: white;
 	top: 45px;
 	left: 60px;
-	position: absolute;
 	border-radius: 100%;
+	position: absolute;
 }
 
 .r_eye {
@@ -64,8 +75,8 @@ div div {
 	background: white;
 	top: 45px;
 	right: 60px;
-	position: absolute;
 	border-radius: 100%;
+	position: absolute;
 }
 
 .body {
@@ -81,6 +92,11 @@ div div {
 	height: 150px;
 	left: -56px;
 	border-radius: 25px;
+	-webkit-transition: transform .1s ease-in-out;
+}
+
+.l_arm:hover {
+	transform: rotate(15deg) translate(-14px, 0)
 }
 
 .r_arm {
@@ -89,6 +105,11 @@ div div {
 	top: -150px;
 	left: 226px; 
 	border-radius: 25px;
+	-webkit-transition: transform .1s ease-in-out;
+}
+
+.r_arm:hover {
+	transform: rotate(-15deg) translate(14px, 0);
 }
 
 .l_leg {
@@ -106,20 +127,3 @@ div div {
 	left: 130px; 
 	border-radius: 0 0 25px 25px;
 }
-
-.l_arm:hover {
-	transform: rotate(15deg) translate(-14px, 0)
-}
-
-.r_arm:hover {
-	transform: rotate(-15deg) translate(14px, 0);
-}
-
-.head:hover {
-	transform: rotate(-5deg) translate(0px, -8px);
-}
-
-.l_ant:hover {
-	transform: rotate(360deg);
-}
-
