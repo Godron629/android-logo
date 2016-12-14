@@ -18,6 +18,7 @@ div div {
 	border-radius: 110px 110px 0 0;
 	top: 32px;
 	margin: 0 auto;
+	-webkit-transition: transform .1s ease-in-out;
 }
 
 .l_ant {
@@ -68,12 +69,14 @@ div div {
 	width: 50px; height: 150px;
 	left: -56px;
 	border-radius: 25px;
+	-webkit-transition: .1s ease-in-out;
 }
 
 .r_arm {
 	width: 50px; height: 150px;
 	left: 226px; top: -150px;
 	border-radius: 25px;
+	-webkit-transition: .1s ease-in-out;
 }
 
 .l_leg {
@@ -86,4 +89,16 @@ div div {
 	width: 50px; height: 110px;
 	left: 130px; top: -256px;
 	border-radius: 0 0 25px 25px;
+}
+
+.l_arm:hover {
+	transform: rotate(15deg) translate(-14px, 0)
+}
+
+.r_arm:hover {
+	transform: rotate(-15deg) translate(14px, 0);
+}
+
+.head:hover {
+	transform: rotate(-5deg) translate(0px, -8px);
 }
