@@ -75,3 +75,15 @@ div div {
 	left: 226px; top: -150px;
 	border-radius: 25px;
 }
+
+.l_leg {
+	width: 50px; height: 110px;
+	left: 40px; top: -146px;
+	border-radius: 0 0 25px 25px;
+}
+
+.r_leg {
+	width: 50px; height: 110px;
+	left: 130px; top: -256px;
+	border-radius: 0 0 25px 25px;
+}
