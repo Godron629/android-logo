@@ -10,7 +10,6 @@ div div {
 .android {
 	height: 404px; width: 334px;
 	margin: 0 auto;
-	border: 1px solid black;
 }
 
 .head {
@@ -28,7 +27,7 @@ div div {
 	top: -32px;
 	left: 45px;
 	transform: rotate(-30deg);
-
+	-webkit-transition: .5s ease-in-out;
 }
 
 .r_ant {
@@ -102,3 +101,8 @@ div div {
 .head:hover {
 	transform: rotate(-5deg) translate(0px, -8px);
 }
+
+.l_ant:hover {
+	transform: rotate(360deg);
+}
+
